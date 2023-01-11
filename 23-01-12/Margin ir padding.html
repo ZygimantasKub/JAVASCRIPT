@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin ir Padding savybes</title>
+    
+    <style>
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+        }
+        .margin {
+            /* norint atitraukti elementa per 15px is visu pusiu */
+            /* margin:15px; */
+            /* norint atitraukti elementa is apacios 15px */
+            /* margin-bottom: 15px; */
+            /* top left right bottom variacijos margin savybei */
+            /* norint atitraukti elementa is kaires puses per 15px */
+            /* pirmoji top                
+            antroji desine                 
+            trecioji apacia
+            ketvirtoji kaire */
+            margin: 30px 50px 80px 15px;
+            
+        }
+
+        /* padding prideda tam kieki i isore */
+        .padding {
+            padding: 30px; 
+            /* border box nurodo kad padding reiksmes dydis neturi buti keiciamas */
+            box-sizing: border-box;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="box margin"></div>
+    <div class="box padding">Ltu at debitis, deserunt dolores corporis dolorem. Dolore sit illum quis amet alias quidem in autem vitae! Quasi nam corporis nesciunt praesentium omnis ducimus commodi, accusamus magnam illo iste.   </div>
+</body>
+</html>
