@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* th {
+            text-align: left;
+            background-color: antiquewhite;
+        } */
+        thead tr th {
+            text-align: left;
+            background-color: antiquewhite;
+        }
+        /* eilutes pasirinkimas */
+        /* tbody tr:nth-child(3) {
+            background: blueviolet;
+        } */
+
+        /* pakartotinai kas 2 */
+        /* tbody tr:nth-child(2n) {
+            background: brown;
+        } */
+
+        /* lyginiam */
+        tbody tr:nth-child(odd) {
+            background: palegreen;
+        }
+
+        /* # nurodo kreipimasi i ID . ID selektoriai im virsu pries kitus selektorius */
+        #treciaeilute {
+            background-color: chocolate;
+        }
+
+        /* !important PERASO VISUS ELEMENTUS */
+        tbody tr {
+            background-color: azure !important;
+        }
+    </style>
+
+</head>
+<body>
+    <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <!-- TH ELEMENTAS REISKIA HEADINGA -->
+                    <th>#</th>
+                    <th>Preke</th>
+                    <th>Kiekis</th>
+                    <th>Kaina</th>
+                    <th>Suma</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kompiuteris 1</td>
+                <td>3</td>
+                <td>200</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kompiuteris 1</td>
+                <td>3</td>
+                <td>200</td>
+                <td>600</td>
+            </tr>
+            <tr id="treciaeilute"  >
+                <td>3</td>
+                <td>Kompiuteris 1</td>
+                <td>3</td>
+                <td>200</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kompiuteris 1</td>
+                <td>3</td>
+                <td>200</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kompiuteris 1</td>
+                <td>3</td>
+                <td>200</td>
+                <td>600</td>
+            </tr>           
+        </tbody>
+    </table>
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <!-- TH ELEMENTAS REISKIA HEADINGA -->
+                <th>#</th>
+                <th>Preke</th>
+                <th>Kiekis</th>
+                <th>Kaina</th>
+                <th>Suma</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Kompiuteris 1</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Kompiuteris 1</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr id="treciaeilute"  >
+            <td>3</td>
+            <td>Kompiuteris 1</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kompiuteris 1</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Kompiuteris 1</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>           
+    </tbody>
+</table>
+</body>
+</html>
