@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nuotrauku lygiavimas</title>
+    <style>
+        .body {
+            text-align: center;
+        }
+        .alignment {
+            /* display: flex; savybe nurodo jog viduje asantys elementai bus ispoziciuonuoti vienoje eileje arba pagal flex parametra */
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+        .img {
+            width: 150px;
+            ;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            width: 33%;
+            gap: 1rem;
+
+        }
+        .box img {
+            width: 200px;
+            /* object-fit: contain; */
+            align-items: center;
+        
+        }
+        .image-text img {
+            width: 300px;
+            float: right;
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- alt yra nuotraukos aprasymas -->
+    <img src="images/1.jpg" alt="ssss">
+    <img src="4.jpg">
+    <img src="images/2.jpg" alt="ssss">
+    <img src="images/3.jpg" alt="ssss">
+    <img src="images/1.jpg" alt="ssss">
+    <img src="4.jpg">
+    <img src="images/2.jpg" alt="a?">
+    <img src="images/1.jpg" alt="ssss">
+    <img src="4.jpg">
+    <img src="images/2.jpg" alt="ssss">
+    <img src="images/3.jpg" alt="ssss">
+    <img src="images/3.jpg" alt="ssss">
+
+    <div class="alignment">
+        <div class="box">
+            <img src="images/3.jpg" alt="ssss">
+        </div>
+        <div class="box">
+            <img src="images/2.jpg" alt="ssss">
+        </div>
+        <div class="box">
+            <img src="images/1.jpg" alt="ssss">
+        </div>
+    </div>
+    <div>
+        <img src="images/1.jpg" alt="ssss">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, vero ipsam sunt hic at earum cum sapiente, consequatur tempore reiciendis rerum adipisci aspernatur voluptates non placeat sequi ad distinctio blanditiis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, vero ipsam sunt hic at earum cum sapiente, consequatur tempore reiciendis rerum adipisci aspernatur voluptates non placeat sequi ad distinctio blanditiis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, vero ipsam sunt hic at earum cum sapiente, consequatur tempore reiciendis rerum adipisci aspernatur voluptates non placeat sequi ad distinctio blanditiis!</p>
+    </div>
+</body>
+</html>
