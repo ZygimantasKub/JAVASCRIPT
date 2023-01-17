@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display:block
+        }
+        .divider {
+            margin-bottom: 0.5rem;
+        }
+        /* css atributo slektorius  */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        input[type="datetime-local"] {
+            width: 100px;
+            background-color: rgb(185, 119, 32);
+            border: 1px solid white ;
+        }
+        input[type="number"] {
+            width: 100px;
+        }
+        input[type="email"] {
+            width: 100px;
+        }
+        input[type="date"] {
+            width: 100px;
+        }
+        .align label {
+            display: block;
+        }
+        textarea {
+            resize: none;
+            height: 200px;
+        }
+        textarea:focus {
+            border: 10px solid red;
+            outline: none;
+        }
+        a.visited {
+            color: red;
+        }
+        a.hover {
+            color: violet;
+            text-decoration: none;
+        }
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="divider">
+            <Label>Ivestike Varda : </Label>
+            <input type="text" value="Zygis">  
+        </div>
+        <div class="divider">
+            <Label>Ivestike Amziu : </Label>
+            <input type="number" min="10" max="50">
+        </div>
+        <div class="divider">
+            <Label>pastas : </Label>
+            <input type="email" placeholder="asd@asd.com" required>
+        </div>
+        <div class="divider">
+            <Label>Gimimo data</Label>
+            <input type="date">
+        </div>
+        <div class="divider">
+            <label for="">Data ir laika</label>
+            <input type="datetime-local">
+        </div>
+        <div class="divider">
+            <label for="">Sutinku</label>
+            <input type="checkbox">
+        </div>
+        <div class="divider align">
+            <label for="sutinku" sss>
+            <input id="sutinku" type="checkbox" checked="checked">
+            Sutinku su bla bla bla</label>
+        </div>
+        <div class="divider">
+            <label>
+            <input type="radio" name="produktai">
+                Obuoliai
+            </label>
+        </div>
+        <div class="divider">
+            <label>
+                <input type="radio" name="produktai">
+                kriause
+            </label>
+        </div>
+        <div class="divider">
+            <label>
+                <input type="radio" name="produktai">
+                bulve
+            </label>
+        </div>
+        <div class="divider">
+            <label>
+                 Ikelti faila 
+                <input type="file">
+            </label>
+        </div>
+        <div class="divider">
+            <label> Slaptazodis </label>
+            <input type="password">
+        </div>
+        <div class="divider">
+            <label> spalva </label>
+            <input type="color">
+        </div>
+        <div class="divider">
+            <label>  </label>
+            <input type="range" min="0" max="100">
+        </div>
+        <div class="divider">
+            <label> Pasirinkite sali : </label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option selected>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="divider">
+            <textarea placeholder="Tekstas"></textarea>
+        </div>
+        <!-- <input type="Submit" value="Siusti"> -->
+        <button type="submit"> Siusti</button>
+        <button type="reset">atstatyti</button>
+    </form>
+</body>
+</html>
