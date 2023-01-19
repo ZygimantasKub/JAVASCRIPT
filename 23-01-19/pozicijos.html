@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozicijos</title>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+        .box {
+            width: 250px;
+            height: 250px;
+        }
+        .red {
+            background-color: red;
+        }
+        .free {
+            position: absolute;
+            /* bottom: 20px;
+            top: 20px ; 
+            left: 200px;
+            right: 10px; */
+            top: 20px;
+            left: 150px;
+        }
+        .bottom-right {
+            bottom: 20px;
+            right: 50px;
+            top: unset;
+            left: unset;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .green {
+            background-color: green;
+        }
+        .overlap {
+            top: 150px;
+            left: 250px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red free bottom-right"></div>
+    <div class="box green overlap"></div>
+    <div class="box blue free"></div>
+    
+</body>
+</html>
