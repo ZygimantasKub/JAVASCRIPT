@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; ;
+}
+a { 
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    color: #6c757d;
+
+}
+
+header nav a:hover {
+    color: #1f61eb;
+}
+
+header .account a.sign-up-link {
+    background-color: #c8d9fa;
+    color: #1f61eb;
+    border: 1px solid #a6c1f8;
+    border-radius: 3px; 
+    padding: 10px 20px;
+}
+
+header .account ul {
+    display: flex;
+
+}
+
+
+#home {
+    background : url(images/background.png) no-repeat top center
+    padding
+}
