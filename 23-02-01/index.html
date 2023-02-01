@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        let a = 'Jonas'
+        let b = 'Jonaitis'
+        if(a.length > b.length ) {
+            console.log("Vardas yra ilgesnis :" + a )
+        } 
+        else if (b.length > a.length) {
+            console.log("Pavarde yra ilgesnė :" + b)
+        }
+    </script>
+    <script>
+        let v = `Žygimantas`
+        let p = `Kubilius`
+        let gim = 1995
+        let metai = 2023 - gim
+
+        console.log ("Aš esu " + v +" "+ p + ". Man yra " + metai +" metai(-ų)") 
+
+    </script>
+
+    <script>
+        let av = 'Petras'
+        let ap = 'Petraitis'
+        let vp = av.slice(-3) + ap.slice(-3)
+        console.log (vp.charAt(0).toLocaleUpperCase(1)+ vp.slice(1))
+    </script>
+
+    <script>
+        
+    </script>
+</body>
+</html>

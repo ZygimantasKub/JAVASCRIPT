@@ -1,0 +1,1 @@
+console.log('Pasisveikinimas is isorinio failo');

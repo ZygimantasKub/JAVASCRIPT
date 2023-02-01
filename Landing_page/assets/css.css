@@ -25,9 +25,11 @@ ul {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
-    display: flex;
     padding-left: 15px;
     padding-right: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: black;
 }
 
 header {
@@ -100,6 +102,11 @@ img {
     max-width: 100%;
 }
 
+.d-flex {
+    display: flex;
+}
+
+
 #home .left .featured-button {
  background-color: #1f61eb;
  color: white;
@@ -132,7 +139,9 @@ img {
 
 #home i {
     color: #1ce1ac ;
-    font-weight: bold;
+    font-weight: 600;
+    padding-right: 15px;
+    
 }
 
 #home .container {
@@ -141,4 +150,42 @@ img {
 
 #home ul {
     padding-bottom: 35px;
+}
+
+
+#howitwork {
+    text-align: center;
+}
+
+#howitwork section {
+    padding-top: 90px;
+}
+
+#howitwork h4 {
+    font-weight: 300;
+}
+
+#howitwork h2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 15px;
+}
+
+#howitwork p {
+   max-width: 550px;
+   margin: 0 auto;
+   padding-bottom: 40px;
+}
+
+#howitwork .step .icon {
+    font-size: 46px;
+    border-radius: 28% 72% 50% 50%/26% 20% 80% 74%;
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
+    color: black;
+    
+}
+#howitwork .work-process .step:nth-child(2) .icon {
+    background-color: #1ce1ac;
 }

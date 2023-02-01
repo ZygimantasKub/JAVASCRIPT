@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript intro</title>
+</head>
+<body>
+    <!-- external JS kodas -->
+    <script src="script.js"></script>
+    <!-- Internal JS kodas -->
+    <script>
+        console.log(`Sveiki visi`) ;
+
+        // kintamuju deklaravimas   
+        let skaicius = 10;
+
+        console.log('Kintamojo tipas: ' + typeof skaicius);
+        console.log('Kintamojo tipas: ', typeof skaicius);
+
+        skaicius += 22; 
+        console.log('Nauja skaiciaus reiksme :', skaicius);
+
+        // kondicine logika
+        //  du lygybes zenklai nurodo tik lyginima
+        // trys lygybes zenklai nurodo reiksmiu ir duomens tipu lyginima
+
+        skaicius = 34
+        if(skaicius === 32) {
+            console.log('kintamojo reiksme yra lygi 32');
+        }
+        else if(skaicius === 34) {
+            console.log('kintamojo reiksme yra lygi 34')
+        }
+
+        else {
+            console.log('skaicius nera lygus 32')
+        }
+        console.log(skaicius === 32)
+
+        let pirmas = 10
+        let antras = 11
+
+        if(pirmas > antras) {
+            console.log('pirmasis kintamasis yra didesnis uz antra')
+        } else if ( pirmas === antras ) {
+            console.log('lygus')
+        }
+        else {
+            console.log('pirmasis kintamasis yra mazesnis uz antraji')
+        }
+        
+    </script>
+</body>
+</html>
