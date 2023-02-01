@@ -7,14 +7,8 @@
     <title>JS</title>
 </head>
 <body>
+
     <script>
-
-        function rand(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-
         let a = 'Jonas'
         let b = 'Jonaitis'
         if(a.length > b.length ) {
@@ -24,6 +18,8 @@
             console.log("Pavarde yra ilgesnė :" + b)
         }
     </script>
+
+
     <script>
         let v = `Žygimantas`
         let p = `Kubilius`
@@ -34,15 +30,83 @@
 
     </script>
 
+
     <script>
+        
         let av = 'Petras'
         let ap = 'Petraitis'
         let vp = av.slice(-3) + ap.slice(-3)
         console.log (vp.charAt(0).toLocaleUpperCase(1)+ vp.slice(1))
     </script>
 
+
     <script>
-        
+        let t = "Once upon a time in hollywood"
+        let beo = t.replaceAll("O", "*").replaceAll("o", "*")
+        console.log(beo)
     </script>
+    
+
+    <script>
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);}
+
+
+        let pir = rand(0, 2)
+        let ant = rand(0, 2)
+        let tre = rand(0, 2)
+        let ket = rand(0, 2)
+        let n = 0
+        let vi = 0
+        let du = 0
+
+        if(pir == 0) {
+            n++
+        }
+        if(pir == 1) {
+            vi++
+        }
+        if(pir == 2) {
+            du++
+        }
+
+        if(ant == 0) {
+            n++
+        }
+        if(ant == 1) {
+            vi++
+        }
+        if(ant == 2) {
+            du++
+        }
+
+        if(tre == 0) {
+            n++
+        }
+        if(tre == 1) {
+            vi++
+        }
+        if(tre == 2) {
+            du++
+        }
+
+        if(ket == 0) {
+            n++
+        }
+        if(ket == 1) {
+            vi++
+        }
+        if(ket == 2) {
+            du++
+        }
+    
+
+
+        console.log("Skaičiai : " + pir + " " + ant + " " + tre + " " + ket +" . " + "Nulių yra : " + n + ". Vienetų yra :" + vi + ". Dvejetų yra : " + du)
+    </script>
+
+
 </body>
 </html>
